@@ -1,0 +1,50 @@
+.fifteenpt-lg {
+    line-height: 1.15em;
+}
+
+@media screen and (max-width: 1025px) {
+    .fiftypt-lg { 
+        font-size: 3em; 
+        line-height: 0.9em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 2em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 1.15em;
+    }
+    .fifteenpt-lg { 
+        font-size: 1em; 
+        line-height: 1.1em; 
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #faq-questions {
+        padding: 2%;
+    }
+    #faq-questions h1 {
+        line-height: 1.5em;
+    }
+    #earhealth-faq {
+        height: 30vh;
+    }
+    .fiftypt-lg { 
+        font-size: 2em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 1.25em; 
+    }
+    .twentypt-lg { 
+        font-size: 1.25em; 
+        line-height: 0.85em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 0.75em; 
+        line-height: 1.5em; 
+    }
+    .fifteenpt-lg { 
+        font-size: 0.75em; 
+        line-height: 1em; 
+    }
+}

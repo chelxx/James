@@ -1,0 +1,77 @@
+/* IMPORT FONTS */
+@font-face {
+    font-family: "FiraSans-Black";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Black.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-BlackItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-BlackItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Bold.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-BoldItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-BoldItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-ExtraBold";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Bold.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-ExtraBoldItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-BoldItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-SemiBold";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-SemiBold.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-SemiBoldItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-SemiBoldItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-ExtraLight";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-ExtraLight.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-ExtraLightItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-ExtraLightItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-Light";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Light.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-LightItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-LightItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Medium.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-MediumItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-MediumItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-RegularItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-RegularItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-Thin";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-Thin.ttf') format('opentype');
+}
+@font-face {
+    font-family: "FiraSans-ThinItalic";
+    src: url('./Clinere_fonts/Fira_Sans/FiraSans-ThinItalic.ttf') format('opentype');
+}
+@font-face {
+    font-family: "Skrikhand";
+    src: url('./Clinere_fonts/Shrikhand/Shrikhand-Regular.ttf') format('opentype');
+}
