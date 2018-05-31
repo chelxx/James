@@ -1,5 +1,9 @@
-/* #buy-now {background-color: orange; margin-right: 20px}
-#buy-now a {color: blue} */
+/* Breakpoints */
+/* 1200+ */
+/* 992-1199 */
+/* 768-991 */
+/* 767 */
+
 
 /* MEDIUM SCREENS */
 @media only screen and (min-width: 768px) {
@@ -108,7 +112,7 @@
 /* ******************** */
 
 /* LARGE SCREENS */
-@media only screen and (min-width: 1024px) { 
+@media only screen and (min-width: 992px) { 
     /* LG IDs */
     #amazon-logo {
         text-align: center;
@@ -117,12 +121,6 @@
     }
     #amazon-logo img, #walgreens-logo img, #walmart-logo img {
         width: 100%;
-    }
-    #free-sample {
-        text-align: right;
-        position: fixed;
-        margin-top: 45vh;
-        z-index: 5;
     }
     #logo-row {
         text-align: center;
@@ -527,11 +525,11 @@ input[type=checkbox]:checked + label::after {
 .wrapper #free-sample {
     position: fixed; 
     left: auto; 
-    right: 0;
+    right: calc((110% - 1120px) / 2);
     z-index: 5;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 991px) {
     .fiftypt-lg { 
         font-size: 3em; 
         line-height: 0.9em; 
@@ -554,7 +552,7 @@ input[type=checkbox]:checked + label::after {
     }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
     .slider-words { 
         width: 100%; 
         padding-top: 20px; 
