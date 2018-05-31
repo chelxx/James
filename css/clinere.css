@@ -57,9 +57,12 @@
     #faq-questions {
         padding: 3% 1% 1% 1%;
     }
-    #faq-questions h1, #faq-questions p, #faq-questions ol li {
+    #faq-questions h1 {
         margin-bottom: 2%; 
         font-size: 18pt;
+    }
+    #faq-questions p, #faq-questions ol li {
+        font-size: 18pt
     }
     /* END MD IDs */
 
@@ -161,11 +164,14 @@
         text-align: center;
     }
     #faq-questions {
-        padding: 3% 0 1% 0;
+        padding: 3% 0 6% 0;
     }
-    #faq-questions h1, #faq-questions p, #faq-questions ol li {
+    #faq-questions h1 {
         margin-bottom: 2%; 
-        font-size: 1.75em;
+        font-size: 1.75rem;
+    }
+    #faq-questions p, #faq-questions ol li {
+        font-size: 1.75rem
     }
 
     #product-info {
@@ -525,8 +531,25 @@ input[type=checkbox]:checked + label::after {
 .wrapper #free-sample {
     position: fixed; 
     left: auto; 
-    right: calc((110% - 1120px) / 2);
+    right: calc((100% - 1120px) / 2);
     z-index: 5;
+}
+
+.faq {
+    border-bottom: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+#faq-products .buy-product {
+    height: 255px;
+    width: auto
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper #free-sample {
+        right: calc((100% - 940px) / 2)
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -548,7 +571,10 @@ input[type=checkbox]:checked + label::after {
         font-size: 2em; 
     }
     #free-sample img{
-        max-height: 125px;
+        max-height: 125px
+    }
+    .wrapper #free-sample {
+        right: calc((100% - 700px) / 2)
     }
 }
 
@@ -589,5 +615,8 @@ input[type=checkbox]:checked + label::after {
     }
     #free-sample img{
         max-height: 75px;
+    }
+    .wrapper #free-sample {
+        right: calc((100% - 520px) / 2)
     }
 }
