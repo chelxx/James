@@ -581,3 +581,139 @@ input[type=checkbox]:checked + label::after {
         max-height: 75px;
     }
 }
+
+/* homepage */
+.slider-words span {
+    display: block;
+}
+.stars {
+    font-size: 3em;
+}
+.fifteenpt-lg {
+    line-height: 1.15em;
+}
+#logo-row img {
+    max-width: 200px;
+    max-height: 150px;
+}
+.wrapper #free-sample {
+    position: fixed; 
+    left: auto; 
+    right: 0;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1025px) {
+    .fiftypt-lg { 
+        font-size: 3em; 
+        line-height: 0.9em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 2em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 1.15em;
+    }
+    .fifteenpt-lg { 
+        font-size: 1em; 
+        line-height: 1.1em; 
+    }
+    .stars { 
+        font-size: 2em; 
+    }
+    #free-sample img{
+        max-height: 125px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .slider-words { 
+        width: 100%; 
+        padding-top: 20px; 
+    }
+    .slider-words span { 
+        display: block; 
+    }
+    .slider-words button { 
+        margin-top: 10px; 
+    }
+    #find-retailer { 
+        margin-top: 0; 
+    }
+    .fiftypt-lg { 
+        font-size: 2em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 1.25em; 
+    }
+    .twentypt-lg { 
+        font-size: 1.25em; 
+        line-height: 0.85em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 0.75em; 
+        line-height: 1.5em; 
+    }
+    .fifteenpt-lg { 
+        font-size: 0.75em; 
+        line-height: 1em; 
+    }
+    .stars { 
+        font-size: 1em; 
+    }
+    #free-sample img{
+        max-height: 75px;
+    }
+}
+
+/* faq */
+.fifteenpt-lg {
+    line-height: 1.15em;
+}
+
+@media screen and (max-width: 1025px) {
+    .fiftypt-lg { 
+        font-size: 3em; 
+        line-height: 0.9em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 2em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 1.15em;
+    }
+    .fifteenpt-lg { 
+        font-size: 1em; 
+        line-height: 1.1em; 
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #faq-questions {
+        padding: 2%;
+    }
+    #faq-questions h1 {
+        line-height: 1.5em;
+    }
+    #earhealth-faq {
+        height: 30vh;
+    }
+    .fiftypt-lg { 
+        font-size: 2em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 1.25em; 
+    }
+    .twentypt-lg { 
+        font-size: 1.25em; 
+        line-height: 0.85em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 0.75em; 
+        line-height: 1.5em; 
+    }
+    .fifteenpt-lg { 
+        font-size: 0.75em; 
+        line-height: 1em; 
+    }
+}
