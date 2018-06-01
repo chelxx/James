@@ -4,6 +4,50 @@
 /* 768-991 */
 /* 767 */
 
+/* SMALL SCREENS */
+@media screen and (max-width: 767px) {
+    .slider-words { 
+        width: 100%; 
+        padding-top: 20px; 
+    }
+    .slider-words span { 
+        display: block; 
+    }
+    .slider-words button { 
+        margin-top: 10px; 
+    }
+    #find-retailer { 
+        margin-top: 0; 
+    }
+    .fiftypt-lg { 
+        font-size: 3em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 2em; 
+    }
+    .twentypt-lg { 
+        font-size: 1.75em; 
+        line-height: 0.85em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 1.5em; 
+        line-height: 1.5em; 
+    }
+    .fifteenpt-lg { 
+        font-size: 1em; 
+        line-height: 1em; 
+    }
+    .stars { 
+        font-size: 1em; 
+    }
+    #free-sample img{
+        max-height: 75px;
+    }
+    .wrapper #free-sample {
+        right: calc((100% - 520px) / 2)
+    }
+}
+/* END SMALL SCREENS */
 
 /* MEDIUM SCREENS */
 @media only screen and (min-width: 768px) {
@@ -95,7 +139,7 @@
         padding: 2% 0 1% 0;
     }
     .stars {
-        font-size: 300%;
+        font-size: 200%;
     }
     .video-girl {
         height: 50vh;
@@ -431,10 +475,10 @@ a:hover {
 /* .firasans-extrabold {
     font-family: "Fira Sans";
 } */
-/* .firasans-semi {
+.firasans-semi {
     font-family: "Fira Sans";
     font-weight: 600;
-} */
+}
 .firasans-reg {
     font-family: "Fira Sans";
     font-weight: 400;
@@ -491,9 +535,6 @@ button,
 a {
     cursor: pointer;
 }
-input[type=checkbox]:checked + label::after {
-
-} 
 /* END CURSORS */
 
 /* ******************** */
@@ -525,69 +566,12 @@ input[type=checkbox]:checked + label::after {
 .wrapper #free-sample {
     position: fixed; 
     left: auto; 
-    right: calc((110% - 1120px) / 2);
+    right: calc((100% - 1120px) / 2);
     z-index: 5;
 }
 
-@media screen and (max-width: 991px) {
-    .fiftypt-lg { 
-        font-size: 3em; 
-        line-height: 0.9em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 2em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 1.15em;
-    }
-    .fifteenpt-lg { 
-        font-size: 1em; 
-        line-height: 1.1em; 
-    }
-    .stars { 
-        font-size: 2em; 
-    }
-    #free-sample img{
-        max-height: 125px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .slider-words { 
-        width: 100%; 
-        padding-top: 20px; 
-    }
-    .slider-words span { 
-        display: block; 
-    }
-    .slider-words button { 
-        margin-top: 10px; 
-    }
-    #find-retailer { 
-        margin-top: 0; 
-    }
-    .fiftypt-lg { 
-        font-size: 2em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 1.25em; 
-    }
-    .twentypt-lg { 
-        font-size: 1.25em; 
-        line-height: 0.85em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1.5em; 
-    }
-    .fifteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1em; 
-    }
-    .stars { 
-        font-size: 1em; 
-    }
-    #free-sample img{
-        max-height: 75px;
+@media screen and (max-width: 1199px) {
+    .wrapper #free-sample {
+        right: calc((100% - 940px) / 2)
     }
 }
