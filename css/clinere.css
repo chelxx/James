@@ -25,18 +25,18 @@
         font-size: 2em; 
     }
     .twentyfivept-lg { 
-        font-size: 1.25em; 
+        font-size: 1em; 
     }
     .twentypt-lg { 
-        font-size: 1.25em; 
+        font-size: 0.95em; 
         line-height: 0.85em; 
     }
     .eighteenpt-lg { 
-        font-size: 0.75em; 
+        font-size: 0.6em; 
         line-height: 1.5em; 
     }
     .fifteenpt-lg { 
-        font-size: 0.75em; 
+        font-size: 0.5em; 
         line-height: 1em; 
     }
     .stars { 
@@ -48,6 +48,17 @@
     .wrapper #free-sample {
         right: calc((100% - 520px) / 2)
     }
+
+    /* VERSUS */
+    #earhealth-vs {
+        height: 30vh;
+    }
+
+    .article-pic img {
+        border-radius: 50%;
+        height: 75px;
+    }
+    /* END VERSUS */
 }
 /* END SMALL SCREENS */
 
@@ -83,7 +94,7 @@
         padding: 0 30px 30px 30px;
     }
     #sliderOne, #sliderTwo, #sliderThree {
-        height: 50vh;
+        height: 40vh;
     }
     #sliderOneReview, #sliderTwoReview, #sliderThreeReview {
         height: 30vh;
@@ -103,7 +114,7 @@
     #faq-questions {
         padding: 3% 1% 1% 1%;
     }
-    #faq-questions h1 {
+    #faq-questions h1, #faq-questions p, #faq-questions ol li {
         margin-bottom: 2%; 
         font-size: 18pt;
     }
@@ -124,7 +135,7 @@
 
     .article-pic img {
         border-radius: 50%;
-        height: 150px;
+        height: 100px;
     }
     .btn-orange {
         padding: 2% 4% 2% 4%;
@@ -161,7 +172,7 @@
 /* ******************** */
 
 /* LARGE SCREENS */
-@media only screen and (min-width: 992px) { 
+@media only screen and (min-width: 992px)  { 
     /* LG IDs */
     #amazon-logo {
         text-align: center;
@@ -192,7 +203,7 @@
         padding: 0 30px 30px 30px;
     }
     #sliderOne, #sliderTwo, #sliderThree {
-        height: 60vh;
+        height: 50vh;
     }
     #sliderOneReview, #sliderTwoReview, #sliderThreeReview {
         height: 35vh;
@@ -210,9 +221,9 @@
         text-align: center;
     }
     #faq-questions {
-        padding: 3% 0 6% 0;
+        padding: 3% 0 1% 0;
     }
-    #faq-questions h1 {
+    #faq-questions h1, #faq-questions p, #faq-questions ol li {
         margin-bottom: 2%; 
         font-size: 1.75rem;
     }
@@ -240,7 +251,7 @@
 
     .article-pic img {
         border-radius: 50%;
-        height: 180px;
+        height: 150px;
     }
     .btn-orange {
         padding: 2% 4% 2% 4%;
@@ -371,7 +382,7 @@ html, body {
     display: flex;
 }
 #swab-facts-img2 {
-    background: url('../images/product1.png') no-repeat center;
+    background: url('../images/product1.jpg') no-repeat center;
     background-size: contain;
     background-position: center;
     justify-content:center;

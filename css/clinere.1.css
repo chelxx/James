@@ -4,6 +4,8 @@
 /* 768-991 */
 /* 767 */
 
+/* #009bdf */
+
 /* SMALL SCREENS */
 @media screen and (max-width: 767px) {
     .slider-words { 
@@ -20,21 +22,21 @@
         margin-top: 0; 
     }
     .fiftypt-lg { 
-        font-size: 3em; 
-    }
-    .twentyfivept-lg { 
         font-size: 2em; 
     }
+    .twentyfivept-lg { 
+        font-size: 1em; 
+    }
     .twentypt-lg { 
-        font-size: 1.75em; 
+        font-size: 0.95em; 
         line-height: 0.85em; 
     }
     .eighteenpt-lg { 
-        font-size: 1.5em; 
+        font-size: 0.6em; 
         line-height: 1.5em; 
     }
     .fifteenpt-lg { 
-        font-size: 1em; 
+        font-size: 0.5em; 
         line-height: 1em; 
     }
     .stars { 
@@ -46,6 +48,17 @@
     .wrapper #free-sample {
         right: calc((100% - 520px) / 2)
     }
+
+    /* VERSUS */
+    #earhealth-vs {
+        height: 30vh;
+    }
+
+    .article-pic img {
+        border-radius: 50%;
+        height: 75px;
+    }
+    /* END VERSUS */
 }
 /* END SMALL SCREENS */
 
@@ -104,6 +117,9 @@
     #faq-questions h1, #faq-questions p, #faq-questions ol li {
         margin-bottom: 2%; 
         font-size: 18pt;
+    }
+    #faq-questions p, #faq-questions ol li {
+        font-size: 18pt
     }
     /* END MD IDs */
 
@@ -209,7 +225,10 @@
     }
     #faq-questions h1, #faq-questions p, #faq-questions ol li {
         margin-bottom: 2%; 
-        font-size: 1.75em;
+        font-size: 1.75rem;
+    }
+    #faq-questions p, #faq-questions ol li {
+        font-size: 1.75rem
     }
 
     #product-info {
@@ -222,7 +241,7 @@
 
     /* LG CLASSES */
     .wrapper {
-        width: 1170px;
+        /* width: 1170px; */
         margin: auto;        
     }
     .header-bottom {
@@ -356,14 +375,14 @@ html, body {
 }
 #swab-facts-img1 {
     background: url('../Clinere_imgs/girl_swab.jpg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     justify-content:center;
     align-items:center;
     display: flex;
 }
 #swab-facts-img2 {
-    background: url('../Clinere_imgs/product1.png') no-repeat;
+    background: url('../Clinere_imgs/product1.jpg') no-repeat;
     background-size: contain;
     background-position: center;
     justify-content:center;
@@ -440,7 +459,6 @@ a.nav-link.active {
 .video-girl {
     background: url('../Clinere_imgs/girl_stock.jpg') no-repeat;
     background-size: contain;
-    height: 100%;
     justify-content:center;
     align-items:center;
     display: flex;
