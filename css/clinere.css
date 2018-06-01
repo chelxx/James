@@ -609,7 +609,10 @@ a {
 
 #faq-products .buy-product {
     height: 255px;
-    width: auto
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 
