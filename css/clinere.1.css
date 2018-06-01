@@ -1,3 +1,54 @@
+/* Breakpoints */
+/* 1200+ */
+/* 992-1199 */
+/* 768-991 */
+/* 767 */
+
+/* SMALL SCREENS */
+@media screen and (max-width: 767px) {
+    .slider-words { 
+        width: 100%; 
+        padding-top: 20px; 
+    }
+    .slider-words span { 
+        display: block; 
+    }
+    .slider-words button { 
+        margin-top: 10px; 
+    }
+    #find-retailer { 
+        margin-top: 0; 
+    }
+    .fiftypt-lg { 
+        font-size: 3em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 2em; 
+    }
+    .twentypt-lg { 
+        font-size: 1.75em; 
+        line-height: 0.85em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 1.5em; 
+        line-height: 1.5em; 
+    }
+    .fifteenpt-lg { 
+        font-size: 1em; 
+        line-height: 1em; 
+    }
+    .stars { 
+        font-size: 1em; 
+    }
+    #free-sample img{
+        max-height: 75px;
+    }
+    .wrapper #free-sample {
+        right: calc((100% - 520px) / 2)
+    }
+}
+/* END SMALL SCREENS */
+
 /* MEDIUM SCREENS */
 @media only screen and (min-width: 768px) {
     /* MD IDs */
@@ -30,7 +81,7 @@
         padding: 0 30px 30px 30px;
     }
     #sliderOne, #sliderTwo, #sliderThree {
-        height: 50vh;
+        height: 40vh;
     }
     #sliderOneReview, #sliderTwoReview, #sliderThreeReview {
         height: 30vh;
@@ -88,7 +139,7 @@
         padding: 2% 0 1% 0;
     }
     .stars {
-        font-size: 300%;
+        font-size: 200%;
     }
     .video-girl {
         height: 50vh;
@@ -105,7 +156,7 @@
 /* ******************** */
 
 /* LARGE SCREENS */
-@media only screen and (min-width: 1024px) { 
+@media only screen and (min-width: 992px)  { 
     /* LG IDs */
     #amazon-logo {
         text-align: center;
@@ -114,12 +165,6 @@
     }
     #amazon-logo img, #walgreens-logo img, #walmart-logo img {
         width: 100%;
-    }
-    #free-sample {
-        text-align: right;
-        position: fixed;
-        margin-top: 45vh;
-        z-index: 5;
     }
     #logo-row {
         text-align: center;
@@ -142,7 +187,7 @@
         padding: 0 30px 30px 30px;
     }
     #sliderOne, #sliderTwo, #sliderThree {
-        height: 60vh;
+        height: 50vh;
     }
     #sliderOneReview, #sliderTwoReview, #sliderThreeReview {
         height: 35vh;
@@ -253,7 +298,7 @@ html, body {
     background-color: #F2F2F2;
 }
 #earhealth-faq {
-    background: url('../Clinere_imgs/scoop.jpg') no-repeat center;
+    background: url('../Clinere_imgs/scoop.jpg') no-repeat;
     background-size: cover;
     justify-content:center;
     align-items:center;
@@ -261,7 +306,7 @@ html, body {
     padding: 0;
 }
 #earhealth-vs {
-    background: url('../Clinere_imgs/mop.jpg') no-repeat center;
+    background: url('../Clinere_imgs/mop.jpg') no-repeat;
     background-size: cover;
     justify-content:center;
     align-items:center;
@@ -290,7 +335,7 @@ html, body {
     background: url('../Clinere_imgs/girl_scoop.jpg') no-repeat center;
 }
 #sliderThree {
-    background: url('../Clinere_imgs/old_man.jpg') no-repeat center;
+    background: url('../Clinere_imgs/old_man.jpg') no-repeat;
 }
 #sliderOne, #sliderTwo, #sliderThree {
     background-size: cover;
@@ -310,7 +355,7 @@ html, body {
     background-color: rgb(0, 155, 223);
 }
 #swab-facts-img1 {
-    background: url('../Clinere_imgs/girl_swab.jpg') no-repeat center;
+    background: url('../Clinere_imgs/girl_swab.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     justify-content:center;
@@ -318,7 +363,7 @@ html, body {
     display: flex;
 }
 #swab-facts-img2 {
-    background: url('../Clinere_imgs/product1.png') no-repeat center;
+    background: url('../Clinere_imgs/product1.png') no-repeat;
     background-size: contain;
     background-position: center;
     justify-content:center;
@@ -394,7 +439,8 @@ a.nav-link.active {
 }
 .video-girl {
     background: url('../Clinere_imgs/girl_stock.jpg') no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 100%;
     justify-content:center;
     align-items:center;
     display: flex;
@@ -424,31 +470,40 @@ a:hover {
 
 /* FONT CLASSES */
 .firasans-bold {
-    font-family: FiraSans-Bold;
+    font-family: "Fira Sans";
+    font-weight: bold;
 }
-.firasans-extrabold {
-    font-family: FiraSans-ExtraBold;
-}
+/* .firasans-extrabold {
+    font-family: "Fira Sans";
+} */
 .firasans-semi {
-    font-family: FiraSans-SemiBold;
+    font-family: "Fira Sans";
+    font-weight: 600;
 }
 .firasans-reg {
-    font-family: FiraSans-Regular;
+    font-family: "Fira Sans";
+    font-weight: 400;
 }
 .firasans-it {
-    font-family: FiraSans-Italic;
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-style: italic;
 }
 .firasans-medit {
-    font-family: FiraSans-MediumItalic;
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-style: italic;
 }
 .firasans-light {
-    font-family: FiraSans-Light;
+    font-family: "Fira Sans";
+    font-weight: 300;
 }
-.firasans-lightit {
-    font-family: FiraSans-LightItalic;
-}
+/* .firasans-lightit {
+    font-family: "Fira Sans";
+    font-weight: 600;
+} */
 .shrikhand {
-    font-family: Shrikhand; 
+    font-family: "Shrikhand"; 
 }
 /* END FONT CLASSES */
 
@@ -481,16 +536,13 @@ button,
 a {
     cursor: pointer;
 }
-input[type=checkbox]:checked + label::after {
-
-} 
 /* END CURSORS */
 
 /* ******************** */
 
 /* CSS FILE IMPORTS */
 /* Fonts */
-@import url("fonts.css");
+/* @import url("./fonts.css"); */
 
 
 #gallery     {margin:0 auto; position:relative; width:601px}
@@ -519,201 +571,8 @@ input[type=checkbox]:checked + label::after {
     z-index: 5;
 }
 
-@media screen and (max-width: 1025px) {
-    .fiftypt-lg { 
-        font-size: 3em; 
-        line-height: 0.9em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 2em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 1.15em;
-    }
-    .fifteenpt-lg { 
-        font-size: 1em; 
-        line-height: 1.1em; 
-    }
-    .stars { 
-        font-size: 2em; 
-    }
-    #free-sample img{
-        max-height: 125px;
-    }
-}
-
-@media screen and (max-width: 765px) {
-    .slider-words { 
-        width: 100%; 
-        padding-top: 20px; 
-    }
-    .slider-words span { 
-        display: block; 
-    }
-    .slider-words button { 
-        margin-top: 10px; 
-    }
-    #find-retailer { 
-        margin-top: 0; 
-    }
-    .fiftypt-lg { 
-        font-size: 2em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 1.25em; 
-    }
-    .twentypt-lg { 
-        font-size: 1.25em; 
-        line-height: 0.85em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1.5em; 
-    }
-    .fifteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1em; 
-    }
-    .stars { 
-        font-size: 1em; 
-    }
-    #free-sample img{
-        max-height: 75px;
-    }
-}
-
-/* homepage */
-.slider-words span {
-    display: block;
-}
-.stars {
-    font-size: 3em;
-}
-.fifteenpt-lg {
-    line-height: 1.15em;
-}
-#logo-row img {
-    max-width: 200px;
-    max-height: 150px;
-}
-.wrapper #free-sample {
-    position: fixed; 
-    left: auto; 
-    right: 0;
-    z-index: 5;
-}
-
-@media screen and (max-width: 1025px) {
-    .fiftypt-lg { 
-        font-size: 3em; 
-        line-height: 0.9em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 2em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 1.15em;
-    }
-    .fifteenpt-lg { 
-        font-size: 1em; 
-        line-height: 1.1em; 
-    }
-    .stars { 
-        font-size: 2em; 
-    }
-    #free-sample img{
-        max-height: 125px;
-    }
-}
-
-@media screen and (max-width: 765px) {
-    .slider-words { 
-        width: 100%; 
-        padding-top: 20px; 
-    }
-    .slider-words span { 
-        display: block; 
-    }
-    .slider-words button { 
-        margin-top: 10px; 
-    }
-    #find-retailer { 
-        margin-top: 0; 
-    }
-    .fiftypt-lg { 
-        font-size: 2em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 1.25em; 
-    }
-    .twentypt-lg { 
-        font-size: 1.25em; 
-        line-height: 0.85em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1.5em; 
-    }
-    .fifteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1em; 
-    }
-    .stars { 
-        font-size: 1em; 
-    }
-    #free-sample img{
-        max-height: 75px;
-    }
-}
-
-/* faq */
-.fifteenpt-lg {
-    line-height: 1.15em;
-}
-
-@media screen and (max-width: 1025px) {
-    .fiftypt-lg { 
-        font-size: 3em; 
-        line-height: 0.9em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 2em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 1.15em;
-    }
-    .fifteenpt-lg { 
-        font-size: 1em; 
-        line-height: 1.1em; 
-    }
-}
-
-@media screen and (max-width: 765px) {
-    #faq-questions {
-        padding: 2%;
-    }
-    #faq-questions h1 {
-        line-height: 1.5em;
-    }
-    #earhealth-faq {
-        height: 30vh;
-    }
-    .fiftypt-lg { 
-        font-size: 2em; 
-    }
-    .twentyfivept-lg { 
-        font-size: 1.25em; 
-    }
-    .twentypt-lg { 
-        font-size: 1.25em; 
-        line-height: 0.85em; 
-    }
-    .eighteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1.5em; 
-    }
-    .fifteenpt-lg { 
-        font-size: 0.75em; 
-        line-height: 1em; 
+@media screen and (max-width: 1199px) {
+    .wrapper #free-sample {
+        right: calc((100% - 940px) / 2)
     }
 }
