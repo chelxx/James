@@ -460,6 +460,7 @@ a.nav-link.active {
     background: url('../Clinere_imgs/girl_stock.jpg') no-repeat;
     background-size: contain;
     justify-content:center;
+    text-align: center;
     align-items:center;
     display: flex;
     padding: 0;
