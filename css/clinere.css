@@ -4,6 +4,8 @@
 /* 768-991 */
 /* 767 */
 
+/* #009bdf */
+
 /* SMALL SCREENS */
 @media screen and (max-width: 767px) {
     .slider-words { 
@@ -20,21 +22,21 @@
         margin-top: 0; 
     }
     .fiftypt-lg { 
-        font-size: 3em; 
-    }
-    .twentyfivept-lg { 
         font-size: 2em; 
     }
+    .twentyfivept-lg { 
+        font-size: 1.25em; 
+    }
     .twentypt-lg { 
-        font-size: 1.75em; 
+        font-size: 1.25em; 
         line-height: 0.85em; 
     }
     .eighteenpt-lg { 
-        font-size: 1.5em; 
+        font-size: 0.75em; 
         line-height: 1.5em; 
     }
     .fifteenpt-lg { 
-        font-size: 1em; 
+        font-size: 0.75em; 
         line-height: 1em; 
     }
     .stars { 
@@ -101,9 +103,12 @@
     #faq-questions {
         padding: 3% 1% 1% 1%;
     }
-    #faq-questions h1, #faq-questions p, #faq-questions ol li {
+    #faq-questions h1 {
         margin-bottom: 2%; 
         font-size: 18pt;
+    }
+    #faq-questions p, #faq-questions ol li {
+        font-size: 18pt
     }
     /* END MD IDs */
 
@@ -205,11 +210,14 @@
         text-align: center;
     }
     #faq-questions {
-        padding: 3% 0 1% 0;
+        padding: 3% 0 6% 0;
     }
-    #faq-questions h1, #faq-questions p, #faq-questions ol li {
+    #faq-questions h1 {
         margin-bottom: 2%; 
-        font-size: 1.75em;
+        font-size: 1.75rem;
+    }
+    #faq-questions p, #faq-questions ol li {
+        font-size: 1.75rem
     }
 
     #product-info {
@@ -570,8 +578,48 @@ a {
     z-index: 5;
 }
 
+.faq {
+    border-bottom: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+#faq-products .buy-product {
+    height: 255px;
+    width: auto
+}
+
 @media screen and (max-width: 1199px) {
     .wrapper #free-sample {
         right: calc((100% - 940px) / 2)
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .fiftypt-lg { 
+        font-size: 3em; 
+        line-height: 0.9em; 
+    }
+    .twentyfivept-lg { 
+        font-size: 2em; 
+    }
+    .eighteenpt-lg { 
+        font-size: 1.15em;
+    }
+    .fifteenpt-lg { 
+        font-size: 1em; 
+        line-height: 1.1em; 
+    }
+    .stars { 
+        font-size: 2em; 
+    }
+    #free-sample img{
+        max-height: 125px
+    }
+    .wrapper #free-sample {
+        right: calc((100% - 700px) / 2)
+    }
+    .wrapper #free-sample {
+        right: calc((100% - 520px) / 2)
     }
 }
