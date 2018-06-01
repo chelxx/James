@@ -105,10 +105,10 @@
     }
     #faq-questions h1 {
         margin-bottom: 2%; 
-        font-size: 18pt;
+        font-size: 18px;
     }
     #faq-questions p, #faq-questions ol li {
-        font-size: 18pt
+        font-size: 18px
     }
     /* END MD IDs */
 
@@ -612,6 +612,7 @@ a {
     width: auto
 }
 
+
 @media screen and (max-width: 1199px) {
     .wrapper #free-sample {
         right: calc((100% - 940px) / 2)
@@ -644,5 +645,9 @@ a {
     }
     .wrapper #free-sample {
         right: calc((100% - 520px) / 2)
+    }
+    #faq-products > div {
+        padding-top: 15px;
+        padding-bottom: 15px
     }
 }
