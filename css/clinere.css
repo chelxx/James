@@ -621,7 +621,8 @@ a {
 }
 
 #faq-questions h1 {
-    margin-left: 25px
+    margin-left: 25px;
+    /* margin-bottom: 0 !important */
 }
 #faq-questions h1::before {
     content: "";
