@@ -263,6 +263,26 @@
         text-align: center;
         padding: 30px;
     }
+    #amazon-buy {
+        margin: 2%;
+        height: 6vh;
+    }
+    #walgreens-buy {
+        margin: 2%;        
+        height: 9vh;
+    }
+    #walmart-buy {
+        margin: 2%;        
+        height: 8vh;
+    }
+    #riteaid-buy {
+        margin: 2%;        
+        height: 13vh;
+    }
+    #myquest-buy {
+        margin: 2%;        
+        height: 8vh;
+    }
 
 
     #earhealth-faq, #earhealth-vs {
@@ -466,6 +486,16 @@ html, body {
     background-color: lightcyan;
     height: 100vh;
 }
+#where-to-buy {
+    text-align: center;
+}
+#where-to-buy-retailers {
+    margin: 5% 3% 3% 3%;
+}
+#where-to-buy-retailers img {
+    display: block;    
+    margin: 0 auto;
+}
 /* END CONSTANT STYLES ID */
 
 /* CONSTANT STYLES CLASSES */
@@ -531,6 +561,10 @@ a.nav-link.active {
     /* background-size: contain; */
     /* background-attachment: fixed; */
     /* background-position: center; */
+}
+img.retailer {
+    text-align: center;
+    display: block;
 }
 #tabs .ui-tabs-nav .ui-state-active a {
     color: black;
