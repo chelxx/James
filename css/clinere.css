@@ -7,7 +7,7 @@
 /* #009bdf */
 
 /* SMALL SCREENS */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .slider-words { 
         width: 100%; 
         padding-top: 20px; 
@@ -22,10 +22,10 @@
         margin-top: 0; 
     }
     .fiftypt-lg { 
-        font-size: 2em; 
+        font-size: 1.9em !important;
     }
     .twentyfivept-lg { 
-        font-size: 1em; 
+        font-size: 1em !important; 
     }
     .twentypt-lg { 
         font-size: 0.95em; 
@@ -36,7 +36,7 @@
         line-height: 1.5em; 
     }
     .fifteenpt-lg { 
-        font-size: 0.5em; 
+        font-size: 0.75em !important; 
         line-height: 1em; 
     }
     .twelvept-lg {
@@ -44,7 +44,7 @@
         line-height: 1em; 
     }
     .stars { 
-        font-size: 0.5em; 
+        font-size: 0.5em !important; 
     }
     .btn-orange {
         padding: 2% 4% 2% 4%;
@@ -61,8 +61,41 @@
         right: calc((100% - 520px) / 2)
     }
     .video-girl {
-        background-size: contain;
+        height: 25vh;
+        background-size: contain !important;
     }
+    .video-girl-words {
+        text-align: center;
+    }
+    .customer-retailer {
+        padding-top: 2%;
+    }
+
+    #amazon-logo {
+        text-align: center;
+        padding: 30px;
+    }
+    #amazon-logo img, #walgreens-logo img, #walmart-logo img {
+        width: 100%;
+    }
+    #logo-row {
+        text-align: center;
+        margin: 3% 0 3% 0;
+    }
+    #riteaid-logo img {
+        width: 60%;
+    }
+    #walgreens-logo, #walmart-logo {
+        text-align: center;
+        padding: 30px;
+    }
+    #product-lineup {
+        height: 20vh;
+    }
+    #sliderOne, #sliderTwo, #sliderThree {
+        height: 30vh;
+    }
+    
 
     /* VERSUS */
     #earhealth-vs {
@@ -177,6 +210,9 @@
     }
     .video-girl-words {
         text-align: center;
+    }
+    .fifteenpt-lg {
+        font-size: 1em;
     }
     /* END MD CLASSES */
 
@@ -693,4 +729,9 @@ a {
         padding-top: 15px;
         padding-bottom: 15px
     }
+}
+
+/* Fixing bootstrap columns for safari */
+.row:before, .row:after {
+    display: none !important;
 }
