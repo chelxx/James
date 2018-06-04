@@ -158,7 +158,7 @@
         font-size: 200%;
     }
     .video-girl {
-        height: 50vh;
+        height: 33vh;
     }
     .video-girl-words {
         text-align: center;
@@ -341,8 +341,8 @@ html, body {
 }
 #product-lineup {
     background: url('../Clinere_imgs/product_group.jpg') no-repeat;
-    background-size: cover;
-    justify-content:center;
+    background-size: contain;
+    /* justify-content:center; */
     align-items:center;
     display: flex;
     padding: 0;
@@ -458,7 +458,7 @@ a.nav-link.active {
 }
 .video-girl {
     background: url('../Clinere_imgs/girl_stock.jpg') no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
     justify-content:center;
     text-align: center;
     align-items:center;
