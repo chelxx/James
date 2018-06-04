@@ -290,6 +290,7 @@
     }
     .video-girl {
         height: 60vh;
+        background-size: cover;
     }
     .video-girl-words {
         text-align: center;
@@ -447,15 +448,15 @@ html, body {
     justify-content: center;
 }
 .carousel-indicators li {
-    text-align: center;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    background-color: transparent;
-    border: 1px solid lightgray;
+    text-align: center !important;
+    border-radius: 50% !important;
+    height: 10px !important;
+    width: 10px !important;
+    background-color: none !important;
+    border: 1px solid lightgray !important;
 }
 .carousel-indicators .active {
-    background-color: lightgray;
+    background-color: lightgray !important;
 }
 .customer-retailer {
     text-align: center;
@@ -477,7 +478,7 @@ a.nav-link.active {
 }
 .video-girl {
     background: url('../images/girl_stock.jpg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     justify-content:center;
     align-items:center;
     display: flex;
