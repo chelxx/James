@@ -94,6 +94,28 @@
 			.product-view .box-collateral #customer_review_form h3::after {content: ""; display: block; height: 1px; background-color: #000; width: 200px}
 			#review-form > a {text-decoration: underline}
 
+			.directions h3 {
+				font-weight: bold !important;
+				color: #009bdf
+			}
+			.directions > img {
+				width: 50%;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%)
+			}
+			.directions ul {
+				list-style-type: disc;
+				list-style-position: inside;
+				padding: initial
+			}
+			.warning-box {
+				padding: 1em 10px;
+				font-size: 14px;
+				background-color: lightblue;
+				margin-bottom: 60px
+			}
+
 			.catalog-product-view .col-sm-18.col-sm-push-6 {left: 0; width: 100%}
 			.tabs_control {position: relative;left: 50%;transform:translateX(-50%)}
 
@@ -293,6 +315,18 @@
 		<?php echo $this->getChildHtml('review_list') ?>
 		<?php echo $this->getChildHtml('product_additional_data') ?>
 		<?php echo $this->getChildHtml('product_additional_collateral') ?>        
+	</div>
+	<div class="warning-box">
+		<p><strong>Note:</strong> <em>even though this products has been designed to be more flexible than the common cotton swab, directions and warnings must be observed.</em></p>
+		<p><strong>Warning:</strong> Do not enter the ear canal beyond the indicated stop-line in the illustration on the package!
+		Use carefully! People with sensitive ears should use caution! As with all common cotton swab-like products, observe the following:
+		if a present ear condition exists, do not use this or any other like product and seek medical attention!
+		(Use of this or any other like product may aggravate a present condition.) Use "alone" to prevent injury by accidental bumping from others.
+		Use only in a secure-safe non-moving environment. Do not use in one's nose. Not for use by children!
+		If pain or discomfort results, discontinue use. Misuse of this or any cotton swab-like product could cause serious injury which could include pain, infection or loss of hearing.
+		Use only as directed. It is recommended by Clinere<sup>&reg;</sup> that these ear cleaners or any other ear cleaners should be disposed of after each use to eliminate the chance of injury or infectipon due to poor or improper cleaning by the user.
+		Keep out of reach of children.
+		</p>
 	</div>
 	<?php echo $this->getChildHtml('upsell_products') ?>
 	<?php echo $this->getChildHtml('catalog.product.related') ?>
