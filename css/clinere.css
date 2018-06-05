@@ -7,7 +7,7 @@
 /* #009bdf */
 
 /* SMALL SCREENS */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .slider-words { 
         width: 100%; 
         padding-top: 20px; 
@@ -22,10 +22,10 @@
         margin-top: 0; 
     }
     .fiftypt-lg { 
-        font-size: 2em; 
+        font-size: 1.9em !important;
     }
     .twentyfivept-lg { 
-        font-size: 1em; 
+        font-size: 1em !important; 
     }
     .twentypt-lg { 
         font-size: 0.95em; 
@@ -36,7 +36,7 @@
         line-height: 1.5em; 
     }
     .fifteenpt-lg { 
-        font-size: 0.5em; 
+        font-size: 0.75em !important; 
         line-height: 1em; 
     }
     .twelvept-lg {
@@ -44,7 +44,7 @@
         line-height: 1em; 
     }
     .stars { 
-        font-size: 0.5em; 
+        font-size: 0.5em !important; 
     }
     .btn-orange {
         padding: 2% 4% 2% 4%;
@@ -60,6 +60,42 @@
     .wrapper #free-sample {
         right: calc((100% - 520px) / 2)
     }
+    .video-girl {
+        height: 25vh;
+        background-size: contain !important;
+    }
+    .video-girl-words {
+        text-align: center;
+    }
+    .customer-retailer {
+        padding-top: 2%;
+    }
+
+    #amazon-logo {
+        text-align: center;
+        padding: 30px;
+    }
+    #amazon-logo img, #walgreens-logo img, #walmart-logo img {
+        width: 100%;
+    }
+    #logo-row {
+        text-align: center;
+        margin: 3% 0 3% 0;
+    }
+    #riteaid-logo img {
+        width: 60%;
+    }
+    #walgreens-logo, #walmart-logo {
+        text-align: center;
+        padding: 30px;
+    }
+    #product-lineup {
+        height: 20vh;
+    }
+    #sliderOne, #sliderTwo, #sliderThree {
+        height: 30vh;
+    }
+    
 
     /* VERSUS */
     #earhealth-vs {
@@ -79,7 +115,6 @@
     /* MD IDs */
     #amazon-logo {
         text-align: center;
-        margin-top: 20px;
         padding: 30px;
     }
     #amazon-logo img, #walgreens-logo img, #walmart-logo img {
@@ -93,7 +128,7 @@
         width: 50%;
     }
     #product-lineup {
-        height: 40vh;
+        height: 30vh;
     }
     #product-lineup-words {
         padding-right: 4%;
@@ -103,7 +138,7 @@
     }
     #riteaid-logo {
         text-align: center;
-        padding: 0 30px 30px 30px;
+        padding: 30px 30px 30px 30px;
     }
     #sliderOne, #sliderTwo, #sliderThree {
         height: 40vh;
@@ -170,10 +205,14 @@
         font-size: 1.25em !important;
     }
     .video-girl {
-        height: 50vh;
+        height: 33vh;
+        background-size: contain;
     }
     .video-girl-words {
         text-align: center;
+    }
+    .fifteenpt-lg {
+        font-size: 1em;
     }
     /* END MD CLASSES */
 
@@ -223,6 +262,26 @@
     #walgreens-logo, #walmart-logo {
         text-align: center;
         padding: 30px;
+    }
+    #amazon-buy {
+        margin: 2%;
+        height: 6vh;
+    }
+    #walgreens-buy {
+        margin: 2%;        
+        height: 9vh;
+    }
+    #walmart-buy {
+        margin: 2%;        
+        height: 8vh;
+    }
+    #riteaid-buy {
+        margin: 2%;        
+        height: 13vh;
+    }
+    #myquest-buy {
+        margin: 2%;        
+        height: 8vh;
     }
 
 
@@ -293,7 +352,8 @@
         font-size: 2em !important;
     }
     .video-girl {
-        height: 60vh;
+        height: 50vh;
+        background-size: contain;
     }
     .video-girl-words {
         text-align: center;
@@ -402,7 +462,7 @@ html, body {
 }
 #swab-facts-img2 {
     background: url('../images/product1.jpg') no-repeat center;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     justify-content:center;
     align-items:center;
@@ -425,6 +485,16 @@ html, body {
 #colorme {
     background-color: lightcyan;
     height: 100vh;
+}
+#where-to-buy {
+    text-align: center;
+}
+#where-to-buy-retailers {
+    margin: 5% 3% 3% 3%;
+}
+#where-to-buy-retailers img {
+    display: block;    
+    margin: 0 auto;
 }
 /* END CONSTANT STYLES ID */
 
@@ -451,15 +521,15 @@ html, body {
     justify-content: center;
 }
 .carousel-indicators li {
-    text-align: center;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    background-color: transparent;
-    border: 1px solid lightgray;
+    text-align: center !important;
+    border-radius: 50% !important;
+    height: 10px !important;
+    width: 10px !important;
+    background-color: none !important;
+    border: 1px solid lightgray !important;
 }
 .carousel-indicators .active {
-    background-color: lightgray;
+    background-color: lightgray !important;
 }
 .customer-retailer {
     text-align: center;
@@ -491,6 +561,10 @@ a.nav-link.active {
     /* background-size: contain; */
     /* background-attachment: fixed; */
     /* background-position: center; */
+}
+img.retailer {
+    text-align: center;
+    display: block;
 }
 #tabs .ui-tabs-nav .ui-state-active a {
     color: black;
@@ -682,8 +756,16 @@ a {
     .wrapper #free-sample {
         right: calc((100% - 520px) / 2)
     }
+    .video-girl {
+        background-size: contain;
+    }
     #faq-products > div {
         padding-top: 15px;
         padding-bottom: 15px
     }
+}
+
+/* Fixing bootstrap columns for safari */
+.row:before, .row:after {
+    display: none !important;
 }
