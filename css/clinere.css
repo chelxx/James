@@ -6,6 +6,20 @@
 
 /* #009bdf */
 
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+    html, body {
+        padding: 0;
+    }    
+    #product-lineup {
+        height: 20vh;
+    }
+    #free-sample img {
+        max-height: 40px;
+    }
+}
+
 /* SMALL SCREENS */
 @media only screen and (max-width: 767px) {
     .slider-words { 
@@ -95,6 +109,26 @@
     #sliderOne, #sliderTwo, #sliderThree {
         height: 30vh;
     }
+    #amazon-buy {
+        margin: 2%;
+        height: 3vh;
+    }
+    #walgreens-buy {
+        margin: 2%;        
+        height: 6vh;
+    }
+    #walmart-buy {
+        margin: 2%;        
+        height: 5vh;
+    }
+    #riteaid-buy {
+        margin: 2%;        
+        height: 10vh;
+    }
+    #myquest-buy {
+        margin: 2%;        
+        height: 5vh;
+    }
     
 
     /* VERSUS */
@@ -149,6 +183,26 @@
     #walgreens-logo, #walmart-logo {
         text-align: center;
         padding: 30px;
+    }
+    #amazon-buy {
+        margin: 2%;
+        height: 6vh;
+    }
+    #walgreens-buy {
+        margin: 2%;        
+        height: 9vh;
+    }
+    #walmart-buy {
+        margin: 2%;        
+        height: 8vh;
+    }
+    #riteaid-buy {
+        margin: 2%;        
+        height: 13vh;
+    }
+    #myquest-buy {
+        margin: 2%;        
+        height: 8vh;
     }
 
     
@@ -276,7 +330,7 @@
         height: 8vh;
     }
     #riteaid-buy {
-        margin: 2%;        
+        margin: 4%;        
         height: 13vh;
     }
     #myquest-buy {
@@ -496,6 +550,10 @@ html, body {
     display: block;    
     margin: 0 auto;
 }
+img#amazon-buy, img#walgreens-buy, img#walmart-buy, img#riteaid-buy, img#quest-buy {
+    margin-top: 2%;
+}
+
 /* END CONSTANT STYLES ID */
 
 /* CONSTANT STYLES CLASSES */
