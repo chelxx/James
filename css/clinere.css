@@ -426,6 +426,9 @@ html, body {
     display: flex;
     padding: 0;
 }
+/* #product-lineup .spacedrop {
+    
+} */
 #sliderOne {
     background: url('../images/versus.jpg') no-repeat center;
 }
@@ -494,7 +497,7 @@ html, body {
 }
 #where-to-buy-retailers img {
     display: block;    
-    margin: 0 auto;
+    margin: 40px auto;
 }
 /* END CONSTANT STYLES ID */
 
@@ -721,6 +724,89 @@ a {
     transform: translateX(-50%)
 }
 
+/* Menu funtimes */
+/* .menu-item-depth-0 {
+    z-index: 12
+} */
+#buy-now {
+    height: 46px !important;
+    overflow-y: hidden
+}
+#buy-now > a {
+    background-color: rgb(250, 150, 50);
+    /* color: #009bdf; */
+    color: white;
+    margin-right: 10px;
+    height: 46px !important;
+    overflow-y: hidden
+}
+#buy-now > a:hover {
+    color: black
+}
+#buy-now::before, #buy-now::after {
+    display: none
+}
+#buy-now > a::before, #buy-now > a::after {
+    display: none
+}
+
+.header-top {
+    z-index: 13 !important
+}
+
+/* Footer stuff */
+.container.fullwidth.bottom-banner, .wrapper_footer_top, .wrapper-extract-bottom {
+    display: none
+}
+.wrapper_footer .inner_links .h5 {
+    font: normal 14px/1.35 Raleway,Arial,Helvetica,sans-serif !important;
+    text-transform: uppercase
+}
+.wrapper_footer {
+    border-top: none !important
+}
+.footer-container {
+    background-color: #202020;
+    /* padding-left: 15px;
+    padding-right: 15px */
+}
+.container.footer_container {
+    max-width: 100% !important;
+    padding-left: 0;
+    padding-right: 0
+}
+.footer_container .col-sm-24 {
+    padding: 0
+}
+.footer_container .row {
+    margin-right: 0;
+    margin-left: 0
+}
+.footer_container li {
+    color: #666666 !important
+}
+.footer_container .extra-bottom-blocks p {
+    font-size: 13px;
+    color: #666666
+}
+.extract-bottom-container {
+    background-color: #e0e0e0;
+    margin-bottom: 50px
+}
+.extra-blocks .item {
+    padding-top: 3%
+}
+.footer_top_container {
+    margin-bottom: 40px
+}
+
+.col2-set .col-1, .col2-set .col-2 {
+    max-width: 50%
+}
+
+#footer-information img {
+    width: 100%
+}
 
 @media screen and (max-width: 1199px) {
     .wrapper #free-sample {
@@ -762,6 +848,10 @@ a {
     #faq-products > div {
         padding-top: 15px;
         padding-bottom: 15px
+    }
+    #faq-products .buy-product {
+        left: 0;
+        transform: none
     }
 }
 
