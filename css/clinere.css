@@ -29,7 +29,7 @@
     }
     .twentypt-lg { 
         font-size: 0.95em; 
-        line-height: 0.85em; 
+        /* line-height: 0.85em;  */
     }
     .eighteenpt-lg { 
         font-size: 0.6em; 
@@ -58,7 +58,7 @@
         max-height: 75px;
     }
     .wrapper #free-sample {
-        right: calc((100% - 520px) / 2)
+        right: calc((100% - 520px) / 2) !important
     }
     .video-girl {
         height: 25vh;
@@ -90,7 +90,9 @@
         padding: 30px;
     }
     #product-lineup {
-        height: 20vh;
+        /* height: 20vh; */
+        padding-top: 15px !important;
+        padding-bottom: 15px !important
     }
     #sliderOne, #sliderTwo, #sliderThree {
         height: 30vh;
@@ -107,6 +109,24 @@
         height: 75px;
     }
     /* END VERSUS */
+
+    .extra-blocks .item {
+        width: 50% !important
+    }
+    .footer_container .col-sm-24 {
+        width: 100%
+    }
+    #product-lineup .spacedrop, #product-lineup .spacedrop + * {
+        font-size: .75em !important
+    }
+
+    #where-to-buy-retailers img {
+        max-width: 100%
+    }
+
+    .extra-blocks .img-responsive {
+        width: 50% !important
+    }
 }
 /* END SMALL SCREENS */
 
@@ -128,7 +148,9 @@
         width: 50%;
     }
     #product-lineup {
-        height: 30vh;
+        /* height: 30vh; */
+        padding-top: 15px !important;
+        padding-bottom: 15px !important
     }
     #product-lineup-words {
         padding-right: 4%;
@@ -144,7 +166,7 @@
         height: 40vh;
     }
     #sliderOneReview, #sliderTwoReview, #sliderThreeReview {
-        height: 30vh;
+        /* height: 30vh; */
     }
     #walgreens-logo, #walmart-logo {
         text-align: center;
@@ -241,7 +263,8 @@
         width: 50%;
     }
     #product-lineup {
-        height: 50vh;
+        min-height: 50vh;
+        height: 500px
     }
     #product-lineup-words {
         padding-right: 3%;
@@ -257,7 +280,8 @@
         height: 50vh;
     }
     #sliderOneReview, #sliderTwoReview, #sliderThreeReview {
-        height: 35vh;
+        /* height: 35vh; */
+        /* min-height: 350px */
     }
     #walgreens-logo, #walmart-logo {
         text-align: center;
@@ -419,16 +443,18 @@ html, body {
     background-color: white;
 }
 #product-lineup {
-    background: url('../images/product_group.jpg') no-repeat center;
+    background: url('../images/product_group.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
     background-size: cover;
     justify-content:center;
     align-items:center;
     display: flex;
     padding: 0;
 }
-/* #product-lineup .spacedrop {
-    
-} */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #product-lineup {background-position: -40px center}
+}
 #sliderOne {
     background: url('../images/versus.jpg') no-repeat center;
 }
@@ -498,6 +524,7 @@ html, body {
 #where-to-buy-retailers img {
     display: block;    
     margin: 40px auto;
+    max-width: 50%
 }
 /* END CONSTANT STYLES ID */
 
@@ -677,7 +704,7 @@ a {
     font-size: 3em;
 }
 .fifteenpt-lg {
-    line-height: 1em;
+    /* line-height: 1em; */
 }
 #logo-row img {
     max-width: 200px;
@@ -685,9 +712,96 @@ a {
 }
 .wrapper #free-sample {
     position: fixed; 
-    left: auto; 
+    left: auto;
     right: calc((100% - 1120px) / 2);
+    bottom: 50px;
     z-index: 5;
+    cursor: pointer
+}
+#free-sample-window {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 17;
+    width: 718px;
+    /* height: 50vh; */
+    background-image: url('../images/freesample-background.png');
+    display: none;
+    padding: 45px;
+    border: 6px solid white;
+    box-shadow: 0px 0px 8px black
+}
+#free-sample-window.open {display: block}
+#free-sample-window > img {
+    display: inline-block;
+    width: 40%;
+    padding: 15px;
+    vertical-align: top
+}
+#free-sample-window > div {
+    display: inline-block;
+    width: 60%;
+    padding: 10px
+}
+#free-sample-window p {
+    margin-bottom: .5em
+}
+#validator {
+    margin-bottom: 0 !important
+}
+#fs-form input, #fs-form select {
+    margin-bottom: 6px;
+    background-color: white !important;
+    height: 24px
+}
+#fs-form #first-name {
+    display: inline-block;
+    width: calc(50% - 3px)
+}
+#fs-form #last-name {
+    display: inline-block;
+    width: calc(50% - 2px)
+}
+#fs-form #email {
+    display: block;
+    width: 100%
+}
+#fs-form #address {
+    display: block;
+    width: 100%
+}
+#fs-form #city {
+    display: inline-block;
+    width: calc(50% - 9px);
+}
+#fs-form #state {
+    display: inline-block;
+    width: 25%
+}
+#fs-form #zip {
+    display: inline-block;
+    width: 25%
+}
+#fs-form button {
+    display: block;
+    width: 40%;
+    margin-left: 30%
+}
+#light-screen {display: none}
+.open + #light-screen {
+    display: block;
+    position: fixed;
+    z-index: 16;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+@media screen and (max-width: 767px) {
+    #free-sample-window {width: calc(100% - 30px)}
+    #free-sample-window > img {display: none}
+    #free-sample-window > div {width: 100%}
 }
 
 .faq {
@@ -724,30 +838,85 @@ a {
     transform: translateX(-50%)
 }
 
+/* i'm so sick of em and magento... */
+.col-sm-24.em_col_main {width: 100%}
+
+.std a {color: inherit}
+.std a:hover {color: inherit; text-decoration: underline}
+
+.inner_footer a:hover {color: rgb(0, 155, 223) !important}
+
+.menu-item-text .level0 a:hover:before {display: none}
+
+.carousel-indicators {width: 100% !important}
+
+h1 {line-height: 1.1 !important}
+
+.ficon {width: 20px; height: 20px; background-image: url('../images/F_icon.svg'); background-size: contain; display: inline-block; position: relative; top: 3px}
+.ficus * {font-size: 18px !important; line-height: 20px}
+.wrapper_footer .ficus a {color: black}
+
+/* video gril */
+.video-gril {position: relative; margin-bottom: 20px}
+.video-gril > img, .video-gril > video {width: 100%; max-width: 100vw}
+.video-girl-words {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%
+}
+.video-gril video {display: none}
+.video-gril.go video {display: block}
+.video-gril.go > img, .video-gril.go .video-girl-words {display: none}
+
+
 /* Menu funtimes */
-/* .menu-item-depth-0 {
-    z-index: 12
-} */
 #buy-now {
     height: 46px !important;
-    overflow-y: hidden
+    overflow-y: hidden;
+    position: relative;
+    float: left
 }
 #buy-now > a {
     background-color: rgb(250, 150, 50);
+    padding-left: 14px;
+    padding-right: 14px;
+    line-height: 46px;
+    text-transform: uppercase;
     /* color: #009bdf; */
     color: white;
+    font-size: 16px;
     margin-right: 10px;
     height: 46px !important;
     overflow-y: hidden
 }
 #buy-now > a:hover {
-    color: black
+    color: black;
+    text-decoration: none;
 }
-#buy-now::before, #buy-now::after {
+#buy-now > a::before {
     display: none
 }
-#buy-now > a::before, #buy-now > a::after {
-    display: none
+.cta-btn {
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(250, 150, 50);
+    padding-left: 16px;
+    padding-right: 16px;
+    text-transform: uppercase;
+    display: inline-block
+}
+.cta-btn:hover {
+    color: black;
+    text-decoration: none
+}
+
+a.link-compare {display: none !important}
+.product-item .product-details.product-shop .price_addto .actions-cart .add-to-btn button.button.btn-cart {
+    /* background-position: 6px -431px !important; */
+    background-color: #009bdf !important
 }
 
 .header-top {
@@ -808,9 +977,14 @@ a {
     width: 100%
 }
 
+
+
 @media screen and (max-width: 1199px) {
     .wrapper #free-sample {
         right: calc((100% - 940px) / 2)
+    }
+    #buy-now > a {
+        font-size: 13px
     }
 }
 
@@ -827,10 +1001,10 @@ a {
     }
     .fifteenpt-lg { 
         font-size: 1em; 
-        line-height: 1.1em; 
+        /* line-height: 1.1em;  */
     }
     .twelvept-lg {
-        font-size: 0.8em; 
+        font-size: 0.8em;
         line-height: 1em; 
     }
     #free-sample img{
@@ -838,9 +1012,6 @@ a {
     }
     .wrapper #free-sample {
         right: calc((100% - 700px) / 2)
-    }
-    .wrapper #free-sample {
-        right: calc((100% - 520px) / 2)
     }
     .video-girl {
         background-size: contain;
@@ -852,6 +1023,14 @@ a {
     #faq-products .buy-product {
         left: 0;
         transform: none
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-bottom {height: 260px}
+    .hnav .menu-item-depth-0 > .em-catalog-navigation > li.level0 {float: left !important}
+    #product-lineup .spacedrop, #product-lineup .spacedrop + * {
+        font-size: 1em !important
     }
 }
 

@@ -1,9 +1,9 @@
 <div class="wrapper">
 
     <!-- FREE SAMPLE -->
-    <!-- <div id="free-sample">
-        <a href=""><img src="{{skin url='images/freesample.png'}}" alt=""></a>
-    </div> -->
+    <div id="free-sample">
+        <img src="{{skin url='images/freesample.png'}}" alt="">
+    </div>
 
     <!-- HERO CAROUSEL -->
     <div id="sliderIndicators" class="carousel slide" data-ride="carousel">
@@ -25,7 +25,7 @@
             <div class="carousel-item">
                 <div id="sliderTwo"class="carousel-block">
                     <div class="slider-words">
-                        <h1 class="shrikhand blue-text fiftypt-lg"><span>Don't swab.</span> <span>Clinere&reg;!</span></h1>
+                        <h1 class="shrikhand blue-text fiftypt-lg"><span>Don't swab.</span> <span>Clinere<sup>&reg;</sup>!</span></h1>
                         <h3 class="firasans-light twentypt-lg"><span>Clinere&trade; Ear Cleaners are</span> <span>more effective than cotton swabs</span> <span>at removing earwax.</span></h3>
                         <a href="{{store url='versus'}}"><button id="get-scoop" class="btn-orange white-text twentypt-lg firasans-extrabold">GET THE SCOOP</button></a>
                     </div>
@@ -36,7 +36,7 @@
                     <div class="slider-words">
                         <h1 class="shrikhand blue-text fiftypt-lg"><span>The end to</span> <span>ear itch.</span></h1>
                         <h3 class="firasans-light twentypt-lg"><span>Our patented Fin End is</span> <span>more satisfying than cotton swabs</span> <span>for relieving ear itch.</span></h3>
-                        <a href="{{store url='products.html'}}"><button id="tap-relief" class="btn-orange white-text twentypt-lg firasans-extrabold">TAP FOR RELIEF</button></a>
+                        <a href="{{store url='versus'}}"><button id="tap-relief" class="btn-orange white-text twentypt-lg firasans-extrabold">TAP FOR RELIEF</button></a>
                     </div>
                 </div>
             </div>
@@ -54,9 +54,9 @@
     <!-- PRODUCT LINEUP -->
     <div id="product-lineup">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 spacedrop"></div>
-            <div id="product-lineup-words" class="col-xs-12 col-sm-6">
-                <h1 class="shrikhand white-text twentyfivept-lg">Ear care products that work.</h2>
+            <div class="col-6 spacedrop"></div>
+            <div id="product-lineup-words" class="col-6">
+                <h1 class="shrikhand white-text twentyfivept-lg">For cleaner, happier ears.</h2>
                 <p class="firasans-light white-text eighteenpt-lg">Yes, there is a gentle, more effective way to remove irritating earwax. Use Clinere&reg; Ear Cleaners and Kits every day as part of your morning or evening routine, and you'll never need to deal with earwax buildup again.</p>
                 <a href="{{store url='where'}}"><button id="find-retailer" class="btn-orange white-text twentypt-lg firasans-extrabold">FIND A RETAILER</button></a>
             </div>
@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-3 review-words">
                             <span class="stars">&starf;</span><span class="stars">&starf;</span><span class="stars">&starf;</span><span class="stars">&starf;</span><span class="stars">&starf;</span>
-                            <p class="firasans-light white-text fifteenpt-lg">"<span class="firasans-semi">Definitely recommend!</span> (Clinere) works insanely well!... I tried this and I honestly felt like a new person. I will never use resgular swabs again! 100% recommend this product to everyone."</p>
+                            <p class="firasans-light white-text fifteenpt-lg">"<span class="firasans-semi">Definitely recommend!</span> (Clinere) works insanely well!... I tried this and I honestly felt like a new person. I will never use regular swabs again! 100% recommend this product to everyone."</p>
                             <p class="firasans-lightit white-text fifteenpt-lg">Amazon Customer</p>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 review-words">
@@ -164,12 +164,29 @@
     </div>
 
     <!-- VIDEO POP UP GIRL -->
-    <div class="video-girl">
+    <!-- <div class="video-girl">
         <div class="video-girl-words" class="col-5">
             <h1 class="shrikhand white-text fiftypt-lg">For cleaner,<br>happier ears!</h1>
             <button class="btn-orange white-text twentypt-lg firasans-extrabold">WATCH VIDEO</button>
         </div>
+    </div> -->
+    <div class="video-gril">
+        <img src="{{skin url='images/girl_stock.jpg'}}" />
+        <video controls preload="none">
+            <source src="{{skin url='videos/CLINERE_Tutorial_r7.mp4'}}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-girl-words" class="col-5">
+            <h2 class="shrikhand white-text fiftypt-lg">For cleaner,<br>happier ears!</h2>
+            <button class="btn-orange white-text twentypt-lg firasans-extrabold">WATCH VIDEO</button>
+        </div>
     </div>
+    <script>
+        document.querySelector('.video-gril button').onclick = function() {
+            document.querySelector('.video-gril').className += ' go'
+            document.querySelector('.video-gril video').play()
+        }
+    </script>
 
     <!-- RETAILERS -->
     <div id="retailers">
@@ -178,16 +195,18 @@
         </div>
         <div id="logo-row" class="row">
             <div id="amazon-logo" class="col-xs-6 col-md-3">
-                <a href="https://www.amazon.com/Clinere/b/ref=bl_dp_s_web_3022615011?ie=UTF8&node=3022615011&field-lbr_brands_browse-bin=Clinere"><img src="{{skin url='images/amazon_logo.png'}}" alt=""></a>
+                <a href="https://www.amazon.com/Clinere/b/ref=bl_dp_s_web_3022615011?ie=UTF8&node=3022615011&field-lbr_brands_browse-bin=Clinere" target="_blank"><img src="{{skin url='images/amazon_logo.png'}}" alt=""></a>
             </div>
             <div id="walgreens-logo" class="col-xs-6 col-md-3">
-                <a href="https://www.walgreens.com/search/results.jsp?Ntt=clinere&tmplId=system-MultiC-PartialA"><img src="{{skin url='images/walgreens_logo.png'}}" alt=""></a>
+                <!-- <a href="https://www.walgreens.com/search/results.jsp?Ntt=clinere&tmplId=system-MultiC-PartialA" target="_blank"><img src="{{skin url='images/walgreens_logo.png'}}" alt=""></a> -->
+                <a href="https://www.walgreens.com/storelocator/find.jsp" target="_blank"><img src="{{skin url='images/walgreens_logo.png'}}" alt=""></a>
             </div>
             <div id="walmart-logo" class="col-xs-6 col-md-3">
-                <a href="https://www.walmart.com/search/?cat_id=976760_2633640_5523672&query=Clinere#searchProductResult"><img src="{{skin url='images/walmart_logo.png'}}" alt=""></a>
+                <!-- <a href="https://www.walmart.com/search/?cat_id=976760_2633640_5523672&query=Clinere#searchProductResult" target="_blank"><img src="{{skin url='images/walmart_logo.png'}}" alt=""></a> -->
+                <a href="https://www.walmart.com/store/finder" target="_blank"><img src="{{skin url='images/walmart_logo.png'}}" alt=""></a>
             </div>
             <div id="riteaid-logo" class="col-xs-6 col-md-3">
-                <img src="{{skin url='images/riteaid_logo.png'}}" alt="">
+                <a href="https://locations.riteaid.com/locations/search.html" target="_blank"><img src="{{skin url='images/riteaid_logo.png'}}" alt=""></a>
             </div>
         </div>
         <div id="view-stores" class="customer-retailer">
@@ -195,4 +214,103 @@
         </div>
     </div>
 
+    <div id="free-sample-window">
+        <img src="{{skin url='images/Clinere_Ear_Cleaners_1ct.png'}}" alt="clinere ear cleaners">
+        <div id="fs-before">
+            <p class="shrikhand white-text eighteenpt-lg">Want a free sample?<br>Fill this out.</p>
+            <p class="shrikhand white-text fifteenpt-lg">For cleaner, happier ears.</p>
+            <p id="validator" class="blue-text firasans-reg">All fields required.</p>
+            <form id="fs-form" class="firasans-reg">
+                <input id="first-name" name="first-name" placeholder="First Name" >
+                <input id="last-name" name="last-name" placeholder="Last Name" >
+                <input id="email" name="email" placeholder="Email">
+                <input id="address" name="address" placeholder="Address" >
+                <input id="city" name="city" placeholder="City">
+                <select id="state" name="state">
+                    <option value="">State</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option>
+                </select>
+                <input id="zip" name="zip" placeholder="Zip Code">
+                <div class="g-recaptcha" data-sitekey="6LcfQlwUAAAAACtDTNWbY9vvUWOmf0MKUAduoXd3"></div>
+                <div id="fs-warning" class="blue-text firasans-reg" hidden></div>
+                <button type="submit" class="btn-orange white-text eighteenpt-lg firesans-bold">SUBMIT</button>
+            </form>
+        </div>
+        <div id="fs-after" hidden></div>
+    </div>
+    <div id="light-screen"></div>
+
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>  
+    <script>
+        var fsController = document.getElementById('free-sample')
+        var fsWindow = document.getElementById('free-sample-window')
+        function fsToggle() {
+            fsWindow.className = (fsWindow.className === 'open') ? '' : 'open'
+        }
+        fsController.onclick = fsToggle
+        document.getElementById('light-screen').onclick = fsToggle
+
+        var fsForm = document.getElementById('fs-form')
+        fsForm.onsubmit = function(e) {
+            e.preventDefault()
+            let warning = document.getElementById('fs-warning')
+            let firstName = document.getElementById('first-name')
+            let lastName = document.getElementById('last-name')
+            let email = document.getElementById('email')
+            let address = document.getElementById('address')
+            let city = document.getElementById('city')
+            let state = document.getElementById('state')
+            let zip = document.getElementById('zip')
+            let captcha = document.getElementById('g-recaptcha-response')
+
+            warning.hidden = false
+            if (firstName.value === '' || lastName.value === '' || email.value === '' || address.value === '' || city.value === '' || state.value === '' || zip.value === '') {
+                warning.innerHTML = 'Please complete all fields'
+            } else if (!email.value.match(/.+@.+\..+/)) {
+                warning.innerHTML = 'Please enter a valid email address'
+            } else if (!zip.value.match(/^\d\d\d\d\d$/)) {
+                warning.innerHTML = 'Please enter a valid zip'
+            } else if (captcha.value === '') {
+                warning.innerHTML = 'Please prove you are human'
+            } else {
+                warning.innerHTML = 'Working...'
+
+                let data = new FormData()
+                data.append('free_sample', '1')
+                data.append('firstName', firstName.value)
+                data.append('lastName', lastName.value)
+                data.append('email', email.value)
+                data.append('address', address.value)
+                data.append('city', city.value)
+                data.append('state', state.value)
+                data.append('zip', zip.value)
+                data.append('grecaptcha', captcha.value)
+
+                let ajax = new XMLHttpRequest()
+                // ajax.open('POST', 'queststaging.impactpreview.com/steve.php', true)
+                ajax.open('POST', '/index.php/clinere', true)
+                ajax.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        let res = ajax.responseText
+                        res = res.slice(res.indexOf('<head>') + 6)
+                        res = res.split('!')
+                        let resHead = document.createElement('p')
+                        resHead.className = 'shrikhand white-text eighteenpt-lg'
+                        resHead.innerHTML = res[0] + '!'
+
+                        let resBody = document.createElement('p')
+                        resBody.className = 'shrikhand white-text fifteenpt-lg'
+                        resBody.innerHTML = res.slice(1).join('!')
+                        
+                        document.getElementById('fs-before').hidden = true
+                        let fsAfter = document.getElementById('fs-after')
+                        fsAfter.appendChild(resHead)
+                        fsAfter.appendChild(resBody)
+                        fsAfter.hidden = false
+                    }
+                }
+                ajax.send(data)
+            }
+        }
+
+    </script>
 </div>

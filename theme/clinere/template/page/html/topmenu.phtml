@@ -40,7 +40,7 @@
 			<ul class="em-catalog-navigation horizontal">
 				<?php echo $_menu ?>
 				<li id="where-to-buy" class="level0 nav-3 level-top"><a class="level-top" href="<?php echo Mage::getBaseUrl();?>where"><span>Where To Buy</span></a></li>
-				<li id="buy-now" class="level0 nav-4 last level-top"><a class="level-top" href="<?php echo Mage::getBaseUrl();?>products.html"><span>Buy Now</span></a></li>
+				<div id="buy-now" class="level0 nav-4 last level-top"><a class="level-top" href="<?php echo Mage::getBaseUrl();?>products.html"><span>Buy Now</span></a></div>
 			</ul>
 		</li>
 	</ul>
@@ -49,16 +49,32 @@
 	var menu = document.querySelector('.nav-container ul');
 
 	var thirtySixCount = menu.querySelector('.level0.nav-1 .level1.nav-1-1 a')
+	thirtySixCount.href = thirtySixCount.href.slice(0, thirtySixCount.href.indexOf('products')) + 'clinere-ear-cleaners-10ct.html'
+	thirtySixCount.innerHTML = '<span>Clinere Ear Cleaners, 10ct</span>';
+
+	var thirtySixCount = menu.querySelector('.level0.nav-1 .level1.nav-1-2 a')
 	thirtySixCount.href = thirtySixCount.href.slice(0, thirtySixCount.href.indexOf('products')) + 'clinere-36ct.html'
 	thirtySixCount.innerHTML = '<span>Clinere Ear Cleaners, 36ct</span>';
 
-	var cleaningKit = menu.querySelector('.level0.nav-1 .level1.nav-1-2 a')
-	cleaningKit.href = cleaningKit.href.slice(0, cleaningKit.href.indexOf('products')) + 'clinere-earwax-cleaning-kit.html'
-	cleaningKit.innerHTML = '<span>Clinere Earwax Cleaning Kit</span>';
+	var cleaningKit = menu.querySelector('.level0.nav-1 .level1.nav-1-3 a')
+	cleaningKit.href = cleaningKit.href.slice(0, cleaningKit.href.indexOf('products')) + 'clinere-ear-wax-remover-reusable-tool-comfort-guide.html'
+	cleaningKit.innerHTML = '<span>Clinere Earwax Remover Reusable Tool Comfort Guide</span>';
+
+	var thirtySixCount = menu.querySelector('.level0.nav-1 .level1.nav-1-4 a')
+	thirtySixCount.href = thirtySixCount.href.slice(0, thirtySixCount.href.indexOf('products')) + 'clinere-earwax-cleaning-kit.html'
+	thirtySixCount.innerHTML = '<span>Clinere Earwax Cleaning Kit</span>';
+
+	var thirtySixCount = menu.querySelector('.level0.nav-1 .level1.nav-1-5 a')
+	thirtySixCount.href = thirtySixCount.href.slice(0, thirtySixCount.href.indexOf('products')) + 'clinere-hearing-aid-cleaning-wipes-30-count.html'
+	thirtySixCount.innerHTML = '<span>Clinere Hearing Aid Cleaning Wipes, 30 Count</span>';
+
+	var cleaningKit = menu.querySelector('.level0.nav-1 .level1.nav-1-6 a')
+	cleaningKit.href = cleaningKit.href.slice(0, cleaningKit.href.indexOf('products')) + 'clinere-hearing-aid-cleaning-spray-30ml.html'
+	cleaningKit.innerHTML = '<span>Clinere Hearing Aid Cleaning Spray, 30ml</span>';
 
 	var vs = menu.querySelector('.level0.nav-2 .level1.nav-2-1 a')
 	vs.href = vs.href.slice(0, vs.href.indexOf('ear-health')) + 'versus'
-	vs.innerHTML = '<span>Clinere<sup>&reg;</sup> Vs Swab</span>'
+	vs.innerHTML = '<span>Clinere<sup>&reg;</sup> vs Cotton Swab</span>'
 	var faq = menu.querySelector('.level0.nav-2 .level1.nav-2-2 a')
 	faq.href = faq.href.slice(0, faq.href.indexOf('ear-health')) + 'faqs'
 	faq.innerHTML = '<span>Earwax FAQs</span>'

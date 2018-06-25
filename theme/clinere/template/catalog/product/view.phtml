@@ -115,23 +115,18 @@
 				background-color: lightblue;
 				margin-bottom: 60px
 			}
+			#retailers {
+				position: relative;
+				/* top: -80px */
+			}
+			.em_col_left.em_sidebar {display: none}
 
 			.catalog-product-view .col-sm-18.col-sm-push-6 {left: 0; width: 100%}
 			.tabs_control {position: relative;left: 50%;transform:translateX(-50%)}
 			.tabs_control li + li {display: none}
 			.tabs_control li + li + li {display: inline-block}
 
-			.video-gril {position: relative; margin-bottom: 20px}
-			.video-gril > img, .video-gril > video {width: 100%}
-			.video-girl-words {
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				width: 100%
-			}
-			.video-gril video {display: none}
-			.video-gril.go video {display: block}
-			.video-gril.go > img, .video-gril.go .video-girl-words {display: none}
+			.ui-slider-tabs-list li a {font-family: 'Open Sans', sans-serif}
 		</style>
         <?php echo $this->getBlockHtml('formkey') ?>
 			<div class="no-display">
@@ -288,8 +283,8 @@
 
 	<div class="video-gril">
 		<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>frontend/default/clinere/images/girl_stock.jpg" />
-		<video controls>
-			<source src="http://es99.impactpreview.com/assets/vid/badger_headervideo.mp4" type="video/mp4">
+		<video controls preload="none">
+			<source src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>frontend/default/clinere/videos/CLINERE_Tutorial_r7.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
 		<div class="video-girl-words" class="col-5">
@@ -298,13 +293,13 @@
 		</div>
 	</div>
 	<script>
-		// document.querySelector('.video-gril button').onclick = function() {
-		// 	document.querySelector('.video-gril').className += ' go'
-		// 	document.querySelector('.video-gril video').play()
-		// }
+		document.querySelector('.video-gril button').onclick = function() {
+			document.querySelector('.video-gril').className += ' go'
+			document.querySelector('.video-gril video').play()
+		}
 	</script>
 
-	<div class="details_tab product-collateral">
+	<div id="details" class="details_tab product-collateral">
 		<?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
 		<!-- to exclude something, wrap the next few lines with if ($alias != thingToExclude) -->
 		<div class="box-collateral <?php echo "box-{$alias}"?>">
@@ -318,7 +313,32 @@
 		<?php echo $this->getChildHtml('product_additional_data') ?>
 		<?php echo $this->getChildHtml('product_additional_collateral') ?>        
 	</div>
+
+	<!-- RETAILERS -->
+	<div id="retailers">
+		<div id="find-retailers" class="customer-retailer">
+				<p class="firasans-semi fifteenpt-lg">FIND US AT THE EAR CARE AISLE AT THESE FINE RETAILERS</p>
+		</div>
+		<div id="logo-row" class="row">
+				<div id="amazon-logo" class="col-xs-6 col-md-3">
+						<a href="https://www.amazon.com/Clinere/b/ref=bl_dp_s_web_3022615011?ie=UTF8&node=3022615011&field-lbr_brands_browse-bin=Clinere"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>frontend/default/clinere/images/amazon_logo.png" alt=""></a>
+				</div>
+				<div id="walgreens-logo" class="col-xs-6 col-md-3">
+						<a href="https://www.walgreens.com/search/results.jsp?Ntt=clinere&tmplId=system-MultiC-PartialA"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>frontend/default/clinere/images/walgreens_logo.png" alt=""></a>
+				</div>
+				<div id="walmart-logo" class="col-xs-6 col-md-3">
+						<a href="https://www.walmart.com/search/?cat_id=976760_2633640_5523672&query=Clinere#searchProductResult"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>frontend/default/clinere/images/walmart_logo.png" alt=""></a>
+				</div>
+				<div id="riteaid-logo" class="col-xs-6 col-md-3">
+						<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>frontend/default/clinere/images/riteaid_logo.png" alt="">
+				</div>
+		</div>
+		<div id="view-stores" class="customer-retailer">
+				<a class="firasans-semi orange-text under fifteenpt-lg" href="<?php echo Mage::getBaseUrl(); ?>where">VIEW ALL STORES</a>
+		</div>
+	</div>
+
 	<?php echo $this->getChildHtml('upsell_products') ?>
-	<?php echo $this->getChildHtml('catalog.product.related') ?>
+	<?php// echo $this->getChildHtml('catalog.product.related') ?>
 	
 </div>
