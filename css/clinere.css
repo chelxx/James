@@ -58,7 +58,8 @@
         max-height: 75px;
     }
     .wrapper #free-sample {
-        right: calc((100% - 520px) / 2) !important
+        /* right: calc((100% - 520px) / 2) !important */
+        right: 0
     }
     .video-girl {
         height: 25vh;
@@ -97,6 +98,8 @@
     #sliderOne, #sliderTwo, #sliderThree {
         height: 30vh;
     }
+    .mob-only {display: block !important}
+    .mob-hide {display: none}
     
 
     /* VERSUS */
@@ -118,10 +121,6 @@
     }
     #product-lineup .spacedrop, #product-lineup .spacedrop + * {
         font-size: .75em !important
-    }
-
-    #where-to-buy-retailers img {
-        max-width: 100%
     }
 
     .extra-blocks .img-responsive {
@@ -518,14 +517,29 @@ html, body {
 #where-to-buy {
     text-align: center;
 }
+#where-to-buy p {
+    margin-bottom: 0;
+    margin-top: 1em
+}
+#where-to-buy-retailers + p {
+    margin-top: 2em
+}
 #where-to-buy-retailers {
-    margin: 5% 3% 3% 3%;
+    margin: 1% 3% 3% 3%;
+    display: flex;
+    flex-wrap: wrap
+}
+#where-to-buy-retailers > * {
+    flex-grow: 1
 }
 #where-to-buy-retailers img {
     display: block;    
-    margin: 40px auto;
-    max-width: 50%
+    margin: 20px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px !important
 }
+#where-to-buy-retailers + div {margin:auto}
 /* END CONSTANT STYLES ID */
 
 /* CONSTANT STYLES CLASSES */
@@ -713,7 +727,8 @@ a {
 .wrapper #free-sample {
     position: fixed; 
     left: auto;
-    right: calc((100% - 1120px) / 2);
+    /* right: calc((100% - 1120px) / 2); */
+    right: 0;
     bottom: 50px;
     z-index: 5;
     cursor: pointer
@@ -869,6 +884,8 @@ h1 {line-height: 1.1 !important}
 .video-gril.go video {display: block}
 .video-gril.go > img, .video-gril.go .video-girl-words {display: none}
 
+.mob-only {display: none}
+
 
 /* Menu funtimes */
 #buy-now {
@@ -981,7 +998,8 @@ a.link-compare {display: none !important}
 
 @media screen and (max-width: 1199px) {
     .wrapper #free-sample {
-        right: calc((100% - 940px) / 2)
+        /* right: calc((100% - 940px) / 2) */
+        right: 0
     }
     #buy-now > a {
         font-size: 13px
@@ -1011,7 +1029,8 @@ a.link-compare {display: none !important}
         max-height: 125px
     }
     .wrapper #free-sample {
-        right: calc((100% - 700px) / 2)
+        /* right: calc((100% - 700px) / 2) */
+        right: 0
     }
     .video-girl {
         background-size: contain;
